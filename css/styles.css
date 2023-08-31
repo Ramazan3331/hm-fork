@@ -91,8 +91,8 @@ a {
 }
 
 .icon--black {
-    fill: #222;
-    stroke: #222;
+    fill: var(--color-body);
+    stroke: var(--color-body);
 }
 
 /* Collapsibles */
@@ -117,32 +117,32 @@ a {
 
 /* Mini Banner */
 
-.mini-banner, .mini-banner_item {
+.mini-banner, .mini-banner__item {
     display: flex;
     justify-content: center;
     padding: 0;
 }
 
-.mini-banner_item {
+.mini-banner__item {
     align-items: center;
     padding: 8px;
     flex: 1 1;
     text-align: center;
 }
 
-.mini-banner-hide {
+.mini-banner--hide {
     display: none;
 }
 
 @media screen and (min-width: 768px) {
-    .mini-banner-hide {
+    .mini-banner--hide {
         display: flex;
     }
 }
 
 /* Banner */
 
-.banner-red {
+.banner--red {
     background: url(/images/banner_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,11 +150,24 @@ a {
     height: 100%;
 }
 
-.banner-primary {
+.banner--primary {
     background: var(--color-primary);
 }
 
-.banner-header {
+.banner--primary .banner__heading {
+    color: #e50010;
+}
+
+.banner--primary .banner__desc {
+    color: var(--color-body);
+}
+
+.banner--primary svg {
+    fill: var(--color-body);
+    stroke: var(--color-body);
+}
+
+.banner__header {
     color: #fff;
     text-align: center;
     margin: 0;
@@ -163,23 +176,23 @@ a {
     height: 100%;
 }
 
-.banner_heading {
+.banner__heading {
     font-size: 1.52rem;
     font-weight: 500;
     padding: 22px 60px 0;
     margin: 0;
 }
 
-.banner_desc {
+.banner__desc {
     margin: 0;
     padding: 4px 60px 0;
 }
 
-.banner-list {
+.banner--list {
     margin: 0;
 }
 
-.banner-link {
+.banner--link {
     color: var(--color-body);
     font-size: 1.6rem;
     font-weight: 600;
@@ -190,7 +203,7 @@ a {
     position: relative;
 }
 
-.banner-link .icon {
+.banner--link .icon {
     height: 22px;
     width: 22px;
 }
@@ -202,9 +215,9 @@ a {
     margin: -13px 15px 0 0;
 }
 
-.banner-header .icon {
-    width: 25px;
-    height: 25px;
+.banner__header .icon {
+    width: 20px;
+    height: 20px;
 }
 
 .collapsible--expanded .collapsible__plus {
@@ -219,27 +232,32 @@ a {
     .banner .collapsible__content {
         max-height: 100%;
         position: relative;
-        bottom: 70px;
+        bottom: 7rem;
         left: 34%;
     }
 
-    .banner-list_item {
+    .banner--list__item {
         display: inline-block;
         padding: 0 4px;
     }
 
-    .banner-link {
+    .banner--link {
         padding: 8px;
         width: auto;
         margin-top: 1.6rem;
     }
 
-    .banner-link svg {
+    .banner--link svg {
         display: none;
     }
 
-    .banner-header {
-        height: 130px;
+    .banner__header {
+        height: 13rem;
+    }
+
+    .banner--p .banner--link {
+        background: var(--color-primary);
+        border: 1px solid var(--color-body);
     }
 }
 
