@@ -224,6 +224,10 @@ a {
     display: none;
 }
 
+.banner--link:hover {
+    background: #e6e6e6;
+}
+
 @media screen and (min-width: 1024px) {
     .collapsible__plus, .collapsible__minus {
         display: none;
@@ -233,7 +237,7 @@ a {
         max-height: 100%;
         position: relative;
         bottom: 7rem;
-        left: 34%;
+        left: 30%;
     }
 
     .banner--list__item {
