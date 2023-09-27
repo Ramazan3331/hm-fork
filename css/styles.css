@@ -95,6 +95,12 @@ a {
     stroke: var(--color-body);
 }
 
+.icon--small {
+    width: 25px;
+    height: 25px;
+}
+
+
 /* Collapsibles */
 
 .collapsible__header {
@@ -113,6 +119,152 @@ a {
 
 .collapsible--expanded .collapsible__content {
     max-height: 100vh;
+}
+
+/* Grids */
+
+.grid {
+    display: grid;
+}
+
+/* Buttons */
+
+.btn {
+    border: none;
+}
+
+.btn--bg {
+    background: var(--color-bg);
+}
+
+/* NavBar */
+
+.header {
+    background: var(--color-bg);
+    left: 0;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1003;
+    padding: 0 12px;
+    height: auto;
+}
+
+.nav-bar {
+    position: relative;
+}
+
+.nav--grid {
+    align-items: center;
+    grid-template-columns: 50px 50px 1fr;
+    height: 72px;
+}
+
+.nav--icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8px;
+    min-width: 170px;
+    align-items: center;
+}
+
+.nav--icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-right: 0;
+    min-width: 44px;
+}
+
+.nav-icon-text {
+    color: var(--color-body);
+    display: none;
+}
+
+.nav--list {
+    display: none;
+}
+
+.main-logo {
+    text-align: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 16px 32px;
+        position: relative;
+        z-index: auto;
+        height: auto;
+    }
+
+    .nav--grid {
+        margin-bottom: 32px;
+        grid-template-rows: auto;
+        grid-template-columns: minmax(360px,1fr) 1fr minmax(360px,1fr);
+        height: auto;
+    }
+
+    .nav--icons .nav-search {
+        display: none;
+    }
+
+    .nav-icon-text {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav--list {
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav--list li {
+        display: inline-block;
+        margin-right: 1.6rem;
+    }
+
+    .logo {
+        width: 65px;
+    }
+
+    .nav--icons li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-right: 1.2rem;
+        margin-left: 0;
+    }
+    
+    .nav-icon {
+        margin-inline-end: 8px;
+    } 
+
+    .nav-icon-text {
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+
+    .nav--icons a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Mini Banner */
