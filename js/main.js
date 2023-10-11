@@ -15,10 +15,12 @@ menu_btn.addEventListener('click', function () {
     film.classList.toggle('is-visible');
 });
 
-const menu_btn_c =document.querySelector('.mobile-menu-btn-c');
+const menu_btn_c = document.querySelector('.mobile-menu-btn-c');
 
 menu_btn_c.addEventListener('click', function () {
     mobile_menu.classList.toggle('is-active');
     menu_btn_c.classList.toggle('is-visible');
     film.classList.toggle('is-visible');
 });
+
+

@@ -152,6 +152,7 @@ a {
 
 .nav-bar {
     position: relative;
+    margin-bottom: 32px;
 }
 
 .nav--grid {
@@ -238,6 +239,7 @@ a {
     }
 
     .logo {
+        padding-top: 14px;
         width: 65px;
     }
 
@@ -356,6 +358,140 @@ a {
 @media screen and (min-width: 1024px) {
     .mobile-menu {
         display: none;
+    }
+}
+
+/* Desktop Menu */
+
+.desktop-menu {
+    display: none;
+    grid-template-columns: 10fr 1fr;
+    align-items: end;
+    position: relative;
+    right: 50%;
+    transform: translateX(62.8%);
+    min-height: 33px;
+    z-index: 1003;
+}
+
+.categories {
+    text-align: center;
+    position: relative;
+}
+
+.categories ul {
+    margin: 0;
+}
+
+.search-bar {
+    width: 12.7vw;
+    margin-right: 12vw;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #222;
+}
+
+.input {
+    border: 0;
+    outline: 0;
+    background: var(--color-bg);
+    padding: 8px 16px 8px 32px;
+}
+
+.categories__item {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.categories__item-link {
+    display: inline-flex;
+}
+
+.categories__item > a {
+    color: var(--color-body);
+    font-size: 1.6rem;
+}
+
+.categories__item:hover .categories__item-link {
+    border-bottom: 1px solid #222;
+    display: block;
+}
+
+.categories-dd {
+    display: none;
+    padding-left: 20%;
+    padding-right: 20%;
+    right: -16px;
+    background: var(--color-bg);
+    border-bottom: 5px solid #222;
+    height: auto;
+    margin-top: 0;
+    min-height: 450px;
+    padding-top: 24px;
+    position: absolute;
+    text-align: left;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.categories__item:hover .categories-dd {
+    display: block;
+}
+
+.dd-list {
+    padding-left: 20%;
+    padding-right: 20%;
+    column-count: 4;
+}
+
+.dd-list > li {
+    margin: 0 32px;
+    padding-bottom: 32px;
+    break-inside: avoid;
+}
+
+.dd-list__title {
+    font-family: "HM Sans Latin Bold", Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    margin-bottom: 6px;
+}
+
+.dd-list > li li {
+    margin-bottom: 6px;
+}
+
+.dd-list__item {
+    display: inline-flex;
+    font-size: 1.3rem;
+    color: var(--color-body);
+}
+
+.search-btn {
+    position: absolute;
+    min-width: 24px;
+    top: 50%;
+    min-height: 24px;
+    margin-top: -14px;
+    padding: 0;
+    left: 0;
+}
+
+.search-icon {
+    width: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop-menu {
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .categories__item {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
