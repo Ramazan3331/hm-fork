@@ -23,4 +23,3 @@ menu_btn_c.addEventListener('click', function () {
     film.classList.toggle('is-visible');
 });
 
-
