@@ -793,3 +793,147 @@ a {
     margin: 0;
     white-space: pre-wrap;
 }
+
+/* Arrival Block */
+
+.arrival-block {
+    margin-top: 24px;
+}
+
+.arrival-block__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.arrival-block__cat {
+    display: flex;
+    white-space: nowrap;
+    margin: 16px 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.arrival-cat {
+    border: 1px solid #222;
+    color: #222;
+    border-radius: 20px;
+    margin-right: 8px;
+    padding: 8px 16px;
+    white-space: nowrap;
+    box-shadow: 0 0 0 #000;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+    font-size: 1.6rem;
+    font-family: "HM Sans Latin Bold", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.arrival-cat-red {
+    background: #e50010;
+    color: #fff;
+    border-color: #e50010;
+}
+
+.a-slider__item {
+    padding: 0 12px;
+    outline: none;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+
+.item-img {
+    align-self: self-start;
+    height: auto;
+    position: relative;
+    width: 100%;
+}
+
+.item-img a {
+    display: block;
+}
+
+.item-img a div {
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    position: relative;
+    padding-bottom: calc(150%);
+}
+
+.item__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.item-fav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.fav-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    bottom: 4px;
+    min-width: 48px;
+    min-height: 48px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+
+.fav-btn svg {
+    margin-inline-end: 8px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.fav-btn svg:hover {
+    fill: #e50010;
+}
+
+.item-desc {
+    padding-top: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-desc__h {
+    font-family: "HM Sans Latin Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.item-desc__p {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
