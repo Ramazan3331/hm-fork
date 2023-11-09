@@ -937,3 +937,120 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.footer {
+    background: #e4e4e4;
+    padding: 16px 0;
+    clear: both;
+}
+
+.footer-w {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-c {
+    display: flex;
+    flex-flow: column;
+    padding: 0 16px;
+}
+
+.footer .collapsible__heading {
+    font-size: 1.3rem;
+    font-family: "HM Sans Latin Regular", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.icon--collapsible {
+    width: 13px;
+    transform: rotate(90deg);
+}
+
+.footer .collapsible__content a {
+    color: #222;
+    font-size: 1.1rem;
+}
+
+.footer .collapsible--expanded .collapsible__heading {
+    color: #e50010;
+}
+
+.footer .collapsible--expanded .icon--collapsible {
+    fill: #e50010;
+}
+
+.footer .collapsible__header {
+    cursor: pointer;
+    padding: 10px 24px;
+}
+
+.footer .collapsible__content a:hover {
+    text-decoration: underline;
+}
+
+.footer .collapsible__content ul {
+    display: block;
+    padding: 0 24px;
+    margin: 0;
+}
+
+.footer .collapsible__content li {
+    margin-bottom: 8px;
+}
+
+.footer-newsletter {
+    text-align: center;
+    margin: 32px 0;
+}
+
+.newsletter--link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    padding: 0 24px;
+    color: #222;
+    text-align: left;
+}
+
+.newsletter--link svg {
+    width: 22px;
+}
+
+.footer-newsletter p {
+    margin: 0;
+}
+
+.footer-l {
+    padding: 0 24px;
+    text-align: center;
+}
+
+.footer-logos {
+    margin: 0 16px;
+    padding: 0;
+}
+
+.footer-logos li {
+    display: inline-block;
+}
+
+.footer-logos li a {
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: auto;
+}
+
+.icon--pin {
+    width: 20px;
+}
+
+.footer-logo {
+    margin-top: 32px;
+    margin-bottom: 4px;
+}
