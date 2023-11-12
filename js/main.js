@@ -23,3 +23,9 @@ menu_btn_c.addEventListener('click', function () {
     film.classList.toggle('is-visible');
 });
 
+const arr_cat = document.querySelectorAll('.arrival-cat');
+arr_cat.forEach((item) =>
+    item.addEventListener("click", function() {
+        this.classList.toggle("arrival-cat-red");
+})
+);
