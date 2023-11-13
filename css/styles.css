@@ -241,6 +241,7 @@ a {
     .nav--list li {
         display: inline-block;
         margin-right: 1.6rem;
+        cursor: pointer;
     }
 
     .logo {
