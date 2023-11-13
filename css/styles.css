@@ -884,6 +884,10 @@ a {
     scrollbar-width: none;
 }
 
+.arrival-block__cat::-webkit-scrollbar {
+    display: none;
+  }
+
 .arrival-cat {
     border: 1px solid #222;
     color: #222;

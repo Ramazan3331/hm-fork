@@ -6,8 +6,8 @@ $(document).ready(function(){
         speed: 300,
         slidesToShow: 8,
         slidesToScroll: 8,
-        prevArrow:"<button type='button' class='slick-prev pull-left prev-arrow'><svg class='icon icon--black'><use xlink:href='images/sprite.svg#arrow'></use></svg></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right next-arrow'><svg class='icon icon--black'><use xlink:href='images/sprite.svg#arrow'></use></svg></button>",
+        prevArrow:"<button type='button' class='slick-prev pull-left prev-arrow'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right next-arrow'></button>",
         responsive: [
           {
             breakpoint: 1280,
@@ -43,8 +43,8 @@ $(document).ready(function(){
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        prevArrow:"<button type='button' class='slick-prev pull-left prev-arrow'><svg class='icon icon--black'><use xlink:href='images/sprite.svg#arrow'></use></svg></button>",
-        nextArrow:"<button type='button' class='slick-next pull-right next-arrow'><svg class='icon icon--black'><use xlink:href='images/sprite.svg#arrow'></use></svg></button>",
+        prevArrow:"<button type='button' class='slick-prev pull-left prev-arrow'></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right next-arrow'></button>",
         responsive: [
           {
             breakpoint: 768,

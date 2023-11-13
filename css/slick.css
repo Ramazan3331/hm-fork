@@ -183,22 +183,29 @@
     right: -64px;
 }
 
-.next-arrow svg, .prev-arrow svg {
-    margin: 0;
-    margin-inline-end: 8px;
-    height: 25px;
-    flex-shrink: 0;
-}
-
-.next-arrow:hover svg, .prev-arrow:hover svg {
-    fill: #e50010;
-    stroke: #e50010;
-}
 
 .prev-arrow {
     left: -64px;
 }
 
-.prev-arrow svg {
+.slick-prev::before {
+    background-image: url('/images/arrow.svg');
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
     transform: rotate(180deg);
+}
+.slick-next::after {
+    background-image: url('/images/arrow.svg');
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
+}
+
+.slick-prev:hover, .slick-next:hover {
+    filter: invert(21%) sepia(98%) saturate(5558%) hue-rotate(346deg) brightness(82%) contrast(123%);
 }
